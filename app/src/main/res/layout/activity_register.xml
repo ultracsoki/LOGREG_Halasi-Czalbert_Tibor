@@ -4,36 +4,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".RegisterActivity"
     android:orientation="vertical">
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editTextFelhEmail"
-        android:hint="Felhasználónév vagy Email"
-        android:textSize="25sp"/>
+        android:id="@+id/editTextEmail"
+        android:textSize="25sp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editTextJelszoBejelentkezes"
-        android:hint="Jelszó"
+        android:id="@+id/editTextFelhNev"
         android:textSize="25sp"
+        android:hint="Felhasználónév"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextJelszo"
+        android:textSize="25sp"
+        android:hint="Jelszó"
         android:inputType="textPassword"/>
 
-    <Button
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/buttonBejelentkezes"
+        android:id="@+id/editTextTeljesNev"
         android:textSize="25sp"
-        android:text="Bejelentkezés"/>
+        android:hint="Teljes név"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/buttonRegisztracio"
+        android:id="@+id/buttonRegisztracioValidacio"
         android:textSize="25sp"
         android:text="Regisztráció"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonVissza"
+        android:textSize="25sp"
+        android:text="Vissza"/>
 
 </LinearLayout>
